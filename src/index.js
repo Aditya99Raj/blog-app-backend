@@ -2,7 +2,8 @@ const express = require('express');
 const connect = require("./configs/db")
 const app = express();
 app.use(express.json());
-const cors = require("cors");
+const cors = require('cors');
+app.use(cors());
 
 const blogController =require("./controllers/blog.conroller")
 const authController = require("./controllers/user.controller")
